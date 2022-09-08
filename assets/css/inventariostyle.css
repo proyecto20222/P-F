@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(56, 91, 219);
+    width: 100%;
+    height: 70px;
+    font-size: 50px;
+    border-bottom: 2px solid;
+}
+
+header .btn-sesion {
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+header .btn-sesion i{
+    color: #000;
+}
+
+.btn-sesion:hover{
+    background-color: rgb(22, 30, 196);
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 75%;
+    background: #ecd367;
+    left: -200px;
+    transition: all 500ms linear;
+    border-radius: 0 20px 20px 0;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar ul li {
+    color: rgba(230, 230, 230, 230, 230, .9);
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+#sidebar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #000;
+}
+
+#container2 {
+    display: flex;
+    /* background:linear-gradient(#ecd367, rgb(100, 100, 211)); */
+    min-height: 400px;
+    width: 1200px;
+    margin: 20px 20px 20px 0;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#big-container {
+    width: 1200px;
+    margin-left: 300px;
+    min-height: 570px;
+    position: relative;
+}
+
+footer {
+    height: 65px;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#big-container h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#big-container hr {
+    color: black;
+    border-color: solid black;
+}
+
+#container2{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+}
+
+section{
+    width: 500px;
+}
